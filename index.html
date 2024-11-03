@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Average Minecraft OP Prison Server</title>
+</head>
+<body style="background-color: darkgray">
+    <script src="break_infinity.js"></script>
+    <script src="format.js"></script>
+    <script src="tabs.js"></script>
+    <script src="enchant.js"></script>
+    <script src="main.js" defer></script>
+    <script src="saveload.js" defer></script>
+
+    <div id="tabs">
+        <button class="tabButtons" onclick="switchTab(0)">Main</button>
+        <button class="tabButtons" onclick="switchTab(1)">Enchants</button>
+    </div>
+
+    <br>
+
+    <div id="main">
+        <div id="money">
+            You have $<span id="moneyDisplay"></span>.
+        </div>
+
+        <div id="tokens">
+            You have <span id="tokenDisplay"></span> tokens.
+        </div>
+
+        <div id="bb">
+            You have broken <span id="bbDisplay"></span> blocks.
+        </div>
+
+        <br>
+
+        <div id="block">
+            You are currently breaking <span id="blockDisplay"></span>.
+        </div>
+
+        <progress id="bbp" style="color: gray" value="0" max="100"></progress>
+    </div>
+
+    <div id="enchants">
+        <span style="font-size: large">Purchase powerful enchants to make your mining experience better.</span><br><br>
+
+        <div id="enchants-money">
+            <span id="efficiency"></span><button onclick="enchant(0)">Enchant</button><br>
+            <span id="fortune"></span><button onclick="enchant(1)">Enchant</button>
+        </div>
+    </div>
+</body>
+</html>
